@@ -1,0 +1,116 @@
+[33mcommit 093e83c7da008bc4fc4ed5a89f4cad8cf906f46b[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/analysis_nitya[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32manalysis_nitya[m[33m)[m
+Merge: b0be79e b45ad9b
+Author: Feian-osa <karkidipeshhuu555@gmail.com>
+Date:   Tue Mar 3 09:07:50 2026 +0545
+
+    Merge branch 'analysis_nitya'
+    to fix the missing files
+
+[33mcommit b45ad9bbfae27d1ceca1f33f0dc4792a9c9d22b2[m
+Author: Feian-osa <karkidipeshhuu555@gmail.com>
+Date:   Tue Mar 3 09:02:02 2026 +0545
+
+    removed the unnecessary duplicate notebooks folder within the nnotebooks folder
+
+[33mcommit b0be79e60c0deb5409567c59f91989619ce33776[m
+Merge: a99cd3c 4752a19
+Author: Feian-osa <karkidipeshhuu555@gmail.com>
+Date:   Tue Mar 3 08:56:55 2026 +0545
+
+    trying to fix git error
+
+[33mcommit 4752a1913a32ab56e0c874d275cf9323b8a81caf[m
+Author: NityaShrestha <shrestha.nitya588@gmail.com>
+Date:   Wed Feb 25 17:30:29 2026 +0545
+
+    Add new working files: cleaningdata and newproject
+
+[33mcommit d9f403c529494628ae7508d6448f64c1971775d0[m
+Author: NityaShrestha <shrestha.nitya588@gmail.com>
+Date:   Wed Feb 25 17:26:19 2026 +0545
+
+    Add new files: cleaningdata and newproject
+
+[33mcommit a99cd3cef2b61183de49be3fa4158c12b28272b9[m
+Author: Feian-osa <karkidipeshhuu555@gmail.com>
+Date:   Thu Feb 19 22:47:02 2026 +0545
+
+    Fix formatting issues in app.py
+
+[33mcommit 5c2b49a7d35eb17984baa355c714e1bab8ff6832[m
+Author: Feian-osa <karkidipeshhuu555@gmail.com>
+Date:   Thu Feb 19 22:37:28 2026 +0545
+
+    created dashboard in python(run the dashboard from .py file)
+
+[33mcommit ea0431b2b12e8df214c4505d4fda2a59c3b2659a[m
+Author: Feian-osa <karkidipeshhuu555@gmail.com>
+Date:   Thu Feb 19 22:36:49 2026 +0545
+
+    added K_means clustering for customer segmentation and streamlit dashboard for rfm values in tables , pie chart and scatterplot
+
+[33mcommit d059a9dade81f48dcad40d99b6a17212bb44aa7f[m
+Author: Feian-osa <karkidipeshhuu555@gmail.com>
+Date:   Thu Feb 19 18:56:33 2026 +0545
+
+    Did k-means clustering for ML model(unsupervised model)
+
+[33mcommit 4c9e6c8c01b1ccbc9a6624e1eacba7c7fab44dfd[m
+Author: NityaShrestha <shrestha.nitya588@gmail.com>
+Date:   Fri Feb 13 20:23:51 2026 +0545
+
+     saved pictures
+
+[33mcommit 353e338d10abf71370f4dbb6a7b7f49f06f67f70[m
+Author: NityaShrestha <shrestha.nitya588@gmail.com>
+Date:   Thu Feb 12 22:07:53 2026 +0545
+
+    Superstore sales dashboard: Sales by month, category, region, top categories, bottom categories
+
+[33mcommit fdc066526d42ffe14d98ea3ee5b5c1525022fd50[m
+Author: NityaShrestha <shrestha.nitya588@gmail.com>
+Date:   Thu Feb 12 20:15:50 2026 +0545
+
+    Superstore sales dashboard: total sales by year
+
+[33mcommit 563250d18cea4d8c6f5a8fb0ea5e97ea06373296[m
+Author: Feian-osa <karkidipeshhuu555@gmail.com>
+Date:   Sun Feb 8 19:20:24 2026 +0545
+
+    Loaded the dataset and set the null values in postal codes to unknown as string so no more null values remain
+
+[33mcommit 2cecc6b7e8b81467651ee30daf35ee9c97a42781[m
+Author: Feian-osa <karkidipeshhuu555@gmail.com>
+Date:   Sun Feb 8 18:22:07 2026 +0545
+
+    Installed necessary packages like pandas,numpy,seaborn,matplotlib and scikit-learn
+
+[33mcommit 9aa2b1abb9d861cd6ba44ce7fe88809bc9a476be[m
+Author: Feian-osa <karkidipeshhuu555@gmail.com>
+Date:   Sun Feb 8 17:51:36 2026 +0545
+
+    Modified next steps folder
+
+[33mcommit de90ee53c720b25b0a5b12cd2ab5d58dd9cff169[m
+Author: Feian-osa <karkidipeshhuu555@gmail.com>
+Date:   Sun Feb 8 17:49:50 2026 +0545
+
+    Changed the requirements file
+
+[33mcommit 52f62b32bb9cc73297222150f152c2e5c707e951[m
+Author: Feian-osa <karkidipeshhuu555@gmail.com>
+Date:   Sun Feb 8 17:45:32 2026 +0545
+
+    Made Simple File Structure
+
+[33mcommit c2add1de322f76ddd92c163433c5841ceb764683[m
+Author: Feian-osa <karkidipeshhuu555@gmail.com>
+Date:   Sun Feb 8 16:46:42 2026 +0545
+
+    Added .md files
+
+[33mcommit 27ab5a2362949a890084b69a6fedd0694967aae1[m
+Author: Feian-osa <karkidipeshhuu555@gmail.com>
+Date:   Sun Feb 8 16:00:25 2026 +0545
+
+    Apply gitignore rules
