@@ -8,7 +8,7 @@ rfm = pd.read_excel("category_summary.xlsx")
 st.title("Superstore RFM Dashboard")
 st.dataframe(rfm)
 fig_pie = px.pie(rfm, 
-                 names='Cluster', 
+                 names='Segment', 
                  values='Customer_Count', 
                  title='Customer Count per Cluster')
 st.plotly_chart(fig_pie)
@@ -20,7 +20,7 @@ fig_scatter = px.scatter(
     x='Recency_Mean',      
     y='Monetary_Mean',      
     size='Frequency_Mean',  
-    color='Cluster',
+    color='Segment',
     hover_data=['Recency_Mean', 'Frequency_Mean', 'Monetary_Mean']
 )
 
