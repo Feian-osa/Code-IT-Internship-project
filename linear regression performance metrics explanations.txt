@@ -1,0 +1,43 @@
+My model’s performance is measured using three key metrics. R-squared tells us how much of the profit changes(variance) the model can explain, with 1 being perfect and 0 being useless. MAE, or Mean Absolute Error, shows the average difference between predicted and actual profit — basically how much the model is off on average. RMSE, or Root Mean Squared Error, is similar but punishes big mistakes more, so it highlights the larger errors. Finally, by comparing the R-squared on training and test data, we can check if the model is overfitting — meaning it memorized the data instead of truly learning patterns.
+
+
+Quick Notes for Presentation (Beginner-Friendly)
+
+R² (R-squared)
+
+Shows how much your model explains the changes in profit.
+
+1 = perfect, 0 = useless.
+
+Compare Train vs Test to see if the model is overfitting.
+
+MAE (Mean Absolute Error)
+
+Average difference between what the model predicts and the actual value.
+
+Example: If MAE = 50 → predictions are off by $50 on average.
+
+Doesn’t care if the error is too big or too small — all errors count equally.
+
+RMSE (Root Mean Squared Error)
+
+Similar to MAE but big mistakes hurt more.
+
+Example: If RMSE = 70 → large errors are pulling the average up.
+
+Overfitting
+
+Model does too well on training data but worse on test data.
+
+Bad: Train R² >> Test R²
+
+Good: Train R² ≈ Test R²
+
+💡 Easy way to remember:
+
+R² → “how much I know”
+
+MAE → “average oops”
+
+RMSE → “average oops, big disasters hurt more”
+
