@@ -12,8 +12,9 @@ with open('metrics.json') as f:
 
 r2_train = metrics['r2_train']
 r2_test = metrics['r2_test']
-mae_value = metrics['mae']
-rmse_value = metrics['rmse']
+mae_value = metrics['Mean_Absolute_Error(MAE)']
+mse_value = metrics['Mean_Squared_Error(MSE)']
+rmse_value = metrics['Root_Mean_Squared_Error(RMSE)']
 overfit = metrics['overfit']
 
 # -------------------------
@@ -36,8 +37,9 @@ st.title("Sales Dashboard & Linear Regression Metrics")
 st.subheader("Linear Regression Model Metrics")
 st.write(f"Train R²: {r2_train:.4f}")
 st.write(f"Test R²: {r2_test:.4f}")
-st.write(f"MAE: ${mae_value:.2f}")
-st.write(f"RMSE: ${rmse_value:.2f}")
+st.write(f"Mean_Absolute_Error(MAE): ${mae_value:.2f}")
+st.write(f"Mean_Squared_Error(MSE): ${mse_value:.2f}")
+st.write(f"Root_Mean_Squared_Error(RMSE): ${rmse_value:.2f}")
 st.write(overfit)
 
 st.subheader("Key Performance Indicators")
@@ -79,26 +81,26 @@ elif graph_option == "All Products":
     fig.update_yaxes(tickformat=",")
 # Top 10 Sub-Categories
 elif graph_option == "Top 10 Sub-Categories":
-    top10_subcats_plot = top10_subcats.head(10)  # take only top 10 rows
+    top10_subcats_plot = top10_subcats.sort_values(by='Sales', ascending=True).head(10)  # take only top 10 rows
     fig = px.bar(top10_subcats_plot,
                  x='Sales',
                  y='Sub Category',
                  orientation='h',
                  title="Top 10 Sub-Categories by Sales",
                  text='Sales')
-    fig.update_yaxes(categoryorder='total ascending')  # largest sales on top
+
     fig.update_xaxes(tickformat=",")
 
 # Bottom 10 Sub-Categories
 else:  # Bottom 10 Sub-Categories
-    least10_subcats_plot = least10_subcats.head(10)  # take only bottom 10 rows
+    least10_subcats_plot = least10_subcats.sort_values(by='Sales', ascending=False).head(10)  # take only bottom 10 rows
     fig = px.bar(least10_subcats_plot,
                  x='Sales',
                  y='Sub Category',
                  orientation='h',
                  title="Bottom 10 Sub-Categories by Sales",
                  text='Sales')
-    fig.update_yaxes(categoryorder='total ascending')  # smallest on top
+
     fig.update_xaxes(tickformat=",")
 
 st.plotly_chart(fig)
