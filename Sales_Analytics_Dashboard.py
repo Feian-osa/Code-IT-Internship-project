@@ -1,4 +1,4 @@
-import streamlit as st # type: ignore
+import streamlit as st 
 import pandas as pd # type: ignore
 import plotly.express as px # type: ignore
 import json
@@ -27,7 +27,7 @@ sales_by_region = pd.read_excel(excel_file, sheet_name='Sales_by_Region')
 top_products = pd.read_excel(excel_file, sheet_name='Top_Products')
 top10_subcats=pd.read_excel(excel_file, sheet_name='Top_Sub_Products')
 least10_subcats=pd.read_excel(excel_file, sheet_name='Bottom_Sub_Products')
-
+kpi_data = pd.read_excel(excel_file, sheet_name='KPI_DATA')
 # -------------------------
 # Dashboard Header
 # -------------------------
@@ -39,6 +39,9 @@ st.write(f"Test R²: {r2_test:.4f}")
 st.write(f"MAE: ${mae_value:.2f}")
 st.write(f"RMSE: ${rmse_value:.2f}")
 st.write(overfit)
+
+st.subheader("Key Performance Indicators")
+st.table(kpi_data)
 
 # -------------------------
 # Sidebar: Select graph

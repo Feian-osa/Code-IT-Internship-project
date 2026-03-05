@@ -41,3 +41,23 @@ MAE → “average oops”
 
 RMSE → “average oops, big disasters hurt more”
 
+Key Regression Metrics (Predicting Continuous Values)
+
+    Mean Absolute Error (MAE): The average of the absolute differences between predictions and actual values; robust to outliers.
+    Mean Squared Error (MSE): The average of the squared differences, heavily penalizing large errors.
+    Root Mean Squared Error (RMSE): The square root of MSE, putting the metric in the same units as the target variable.
+    R-squared (R^2): Represents the proportion of variance in the dependent variable explained by the model (0 to 1).
+    Adjusted R^2: Modifies  based on the number of predictors, reducing overestimation. 
+
+Metric 	 Purpose	                    Sensitivity to Outliers
+MAE	 Average magnitude of error		Low
+MSE	 Average squared error	        	High
+RMSE	 Average error (same units)		High
+	 Goodness of fit	                 	N/A
+Adj. R^2	 Fit adjusted for complexity	 	N/A
+
+When to Use Which:
+   * Use RMSE or MSE when large errors are particularly undesirable.
+    *Use MAE when you want an easily interpretable, robust measure of average error.
+    *Use Adjusted
+    when building multiple linear regression models to avoid overestimation from adding unnecessary variables. 
