@@ -64,14 +64,11 @@ Dataset used: **Supermart Grocery Sales - Retail Analytics Dataset**
   - Month  
   - Month Name  
 - Created new feature:
-
-```python
+ 
 Profit Margin % = (Profit * 100 / (Sales - Discount))
-
-
-
-
+ 
  ### 2. KPI Calculation
+ 
 Key business metrics were calculated to summarize overall performance:
 
 - **Total Sales**: Sum of all sales values  
